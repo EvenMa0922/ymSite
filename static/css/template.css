@@ -9,14 +9,15 @@ body {
  */
 header {
   background-color: #DFB887;
-  height: 35px;
+  height: 47px;
   width: 100%;
   opacity: .5;
   margin-bottom: 50px;
 }
 header h1.logo {
   margin: 0;
-  font-size: 1.7em;
+  margin-top: 3px;
+  font-size: 2em;
   color: #fff;
   text-transform: uppercase;
   float: left;
@@ -41,8 +42,8 @@ div.home {
           border-radius: 6px;
 }
 div.about {
-  padding: 10px 0 30px 40px;
-  background-color: #E6E6FA;
+  padding: 10px 0 30px 0px;
+  /*background-color: #E6E6FA;*/
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
