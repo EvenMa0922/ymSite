@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+  </head>
+  <body>
+  {% extends "template.html" %}
+  {% block content %}
+    <div class="portfolio">
+      <h1 style="text-align: center">Even Ma</h1>
+      <img style="border-radius: 6px;" class="image" src="{{ url_for('static', filename='images/selfie.jpg') }}"
+           alt="even's selfie" width="200" height="300"><br>
+      <h3>Statement of Originality</h3><hr>
+      <p>Statement of Originality and ConfidentialityThis portfolio is the work of James Cook. Please do not
+        copy without permission. Some of the exhibits, work samples, and/or service samples are the
+        proprietary property of the organization whose name appears on the document. Each has granted
+        permission for this product to be used as a demonstration of my work.</p><br>
+      <h3>Personal Information</h3><hr>
+      <p>Hello everyone, welcome to my site. I'm Even, a software engineer. I earned my Bachelor of Science
+        degree at San Francisco State University. Now I am looking for opportunities where I can bring my
+        creativity and tackle challenging problems with my versatile skill set.</p>
+      <p>When I first time tried programing, I fell in love with it. For me, programing is like playing LEGO,
+        you use limited materials to create unlimited objects. The process that converting an idea to real
+        is full of fun.</p><br>
+      <h3>Work Philosophy</h3><hr>
+      <p>Keeping keen mind and being eager to learn. Thinking more of problems is more important than just
+          mechanically generating codes.</p><br>
+      <h3>Career Goals</h3><hr>
+      <p>Working hard and accumulate experience, enhancing the ability to scheme projects and getting higher degree
+        in computer field and start my own researches.(In the next five years)</p><br>
+      <h3>Skill Set</h3><hr>
+      <p>I am mastered of kinds of programing languages, expertly applying different frameworks and familiar with
+        popular databases and servers. I have abundant experience about building web applications. And I possess
+        solid knowledge of data structures and algorithms, which gives me remarkable problem solving ability. </p>
+      <h4>Programing Language:</h4>
+      <p>Java, Ruby, Python, JavaScript, HTML, CSS, PHP, MySQL, PostgreSQL</p>
+      <h4>Frameworks:</h4>
+      <p>Ruby on Rails, Django, Flask, React.js, Angular, jQuery</p>
+      <h4>Others:</h4>
+      <p>AWS, Heroku, MongoDB, Node.js, PythonAnywhere</p><br>
+      <h3>Resume</h3><hr><br>
+      <embed src="{{ url_for('static', filename='resume/evenResume2019.pdf') }}" type="application/pdf"
+             width="100%" height="600px"><br>
+    </div>
+  {% endblock %}
+  </body>
+</html>

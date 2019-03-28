@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from flask import request
 
 app = Flask(__name__)
 
@@ -12,16 +11,13 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
 
-@app.route('/test')
-def test():
-    user_agent = request.headers.get('User-Agent')
-    return '<p>Your browser is %s.</p>' % user_agent
-
-
-@app.route('/user/<name>')
-def user(name):
-    return '<h2>Greeting %s!</h2>' % name
+@app.route('/siteInformation')
+def siteInformation():
+    return render_template('siteInformation.html')
 
 
 if __name__ == '__main__':
