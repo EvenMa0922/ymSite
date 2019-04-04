@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+  </head>
+  <body>
+  {% extends "template.html" %}
+  {% block content %}
+    <div class="about">
+      <h1>PROJECTS</h1>
+      <p>These are part of my projects. They are representative, each of them involves in different technologies.</p><br><hr>
+      <h3>WEB APPLICATIONS</h3><br>
+      <h4>Y.S -- PERSONAL WEB SITE</h4>
+      <p>Y.S is my personal site, you are actually in it now. It is a Python/Flask app, and HTML, CSS and JavaScript
+        are used to build pages and layout.</p>
+      <p>So far you can find my portfolio and my projects here. I will keep add
+        new features, some cool stuff and new technology will be involved in. Please come back and see the changes</p><br>
+      <h4>FIR -- CLASSIC BOARD GAME</h4>
+      <ul class="exhibation">
+        <li><a href="/static/images/fir-01.png"><img style="margin-left: -40px" class="image" src="{{ url_for('static', filename='images/fir-01.png') }}"
+           alt="even's selfie" width="180" height="180"></a><br></li>
+        <li><a href="/static/images/fir-02.png"><img class="image" src="{{ url_for('static', filename='images/fir-02.png') }}"
+           alt="even's selfie" width="180" height="180"></a><br></li>
+        <li><a href="/static/images/fir-03.png"><img class="image" src="{{ url_for('static', filename='images/fir-03.png') }}"
+           alt="even's selfie" width="180" height="180"></a><br></li>
+      </ul>
+      <p>Five in a Row, also called Gomoku. It is an abstract strategy board game.</p>
+      <p>Players alternate turns placing a stone of their color on an empty
+        intersection. The winner is the first player to form an unbroken chain of five stones horizontally,
+        vertically, or diagonally.</p>
+      <a href="https://fir-even.herokuapp.com">Demo</a>
+      <p>This game is writen by React.js. I used node.js to create the project and deployed on Heruoku.
+        The Component of React is a powerful feature. It allows us to do
+       OOP in front-end part.</p>
+      <p>Challenges here are being familiar with unique rules and syntax in React, such as Component and State.
+        and how to organize theose different objects.</p>
+      <p>The way to check who wins the game is also tricky and complex. To see my codes, please use the link below.</p>
+      <a href="https://github.com/EvenMa0922/FIR-five-in-a-row-">Code</a><br><br><hr>
+      <h3>JAVA PROJECTS</h3><br>
+      <h4>RAINBOW REEF -- CLASSIC BRICK BREAKER GAME</h4>
+      <ul class="exhibation">
+        <li><a href="/static/images/rainbow-01.jpeg"><img style="margin-left: -40px" class="image" src="{{ url_for('static', filename='images/rainbow-01.jpeg') }}"
+           alt="even's selfie" width="180" height="180"></a><br></li>
+        <li><a href="/static/images/rainbow-02.jpeg"><img class="image" src="{{ url_for('static', filename='images/rainbow-02.jpeg') }}"
+           alt="even's selfie" width="180" height="180"></a><br></li>
+        <li><a href="/static/images/rainbow-03.jpeg"><img class="image" src="{{ url_for('static', filename='images/rainbow-03.jpeg') }}"
+           alt="even's selfie" width="180" height="180"></a><br></li>
+      </ul>
+      <p>Rainbow Reef is a classic brick breaker game. Player controls a bar to move horizontally by keyboard, and
+        try to catch and bounce the ball to break the bricks above.</p>
+      <p>It is multiple levels game, different color of bricks grand you different value. There are also different
+        items that helps you in the game.</p>
+      <p>Demo</p>
+      <p>This game is written by Java. It is a representative Java Object-Oriented Programming.</p>
+      <p>It is very challenging, which requires high comprehension of kinds of Programming concepts, such as
+        treads, data structures and familiarity of Java and its libraries.</p>
+      <p>The original code could be found on my Github, the link is below.</p>
+      <a href="https://github.com/EvenMa0922/Rainbow-Reef">Code</a><br><hr>
+      <h4>TO BE CONTINUED</h4>
+      <p>Because of lacking of time, I couldn't add more stuff here so far. I will keep working on it.
+        Please come back in the future to see more fun things.</p>
+    </div>
+  </body>
+  {% endblock %}
+</html>
